@@ -3,12 +3,12 @@ FROM node:12.2.0-alpine as develop-stage
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 COPY . .
 
 # build stage
 FROM develop-stage as build-stage
-RUN npm build
+RUN yarn build
 
 # production environment
 FROM nginx:stable-alpine as production-stage
