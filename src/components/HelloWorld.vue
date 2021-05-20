@@ -7,7 +7,7 @@
         <span style="color:#AD5353"> Dashboard</span>
       </h1>
       <p>
-        Project overview and latest sensor events
+        Project overview and latest sensor events.
       </p>
     </div>
   </div>
